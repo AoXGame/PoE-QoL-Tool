@@ -942,10 +942,7 @@ PickKey2:
     SetTimer, RemoveToolTip, -1000
 return
 
-; ─────────────────────────────────────────────────────────────────────────────
-;  Weapon Swap Functions
-; ─────────────────────────────────────────────────────────────────────────────
-PickWeaponSwapKey:
+ToggleDualSpam:
     SpamDualMode := !SpamDualMode
     dualModeValue := SpamDualMode ? 1 : 0
     IniWrite, %dualModeValue%, %ConfigINI%, KeySpam, SpamDualMode
