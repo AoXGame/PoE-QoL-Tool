@@ -1,0 +1,10 @@
+<Window x:Class="PoeSvintus.RegionSelectWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Select Region" WindowStyle="None" AllowsTransparency="True" 
+        Background="#01000000" Topmost="True" WindowState="Maximized"
+        Cursor="Cross" MouseDown="Window_MouseDown" MouseMove="Window_MouseMove" MouseUp="Window_MouseUp" KeyDown="Window_KeyDown">
+    <Canvas x:Name="SelectionCanvas">
+        <Rectangle x:Name="SelectionRect" Stroke="Yellow" StrokeThickness="2" Fill="#33FFFF00" Visibility="Collapsed"/>
+    </Canvas>
+</Window>
